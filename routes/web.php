@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/{any}', 'SpaController@index')->where('any', '.*');
+Route::view('/{any}', 'layouts.app')->where('any', '.*');
