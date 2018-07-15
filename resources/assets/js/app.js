@@ -15,8 +15,16 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+
+Vue.use(VueMaterial)
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
+import App from './App'
+
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    components: { App },
+    template: '<App/>'
 });
